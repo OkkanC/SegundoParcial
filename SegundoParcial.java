@@ -64,9 +64,11 @@ public class SegundoParcial {
                        System.out.println("\n\nIngresa el Radio: "); r=entrada.nextFloat();
                        System.out.println("Tu Volumen es: "+hija.volumenEsfera(r));
                 }
+                     default -> System.out.println("No ingresaste una opción válida");
                    
                 }
         break;
+
         
         case 2:
            System.out.println("\n\n");
@@ -94,7 +96,12 @@ public class SegundoParcial {
                case 3:
                     System.out.println("\n\nIngresa el valor del Lado: "); a=entrada.nextFloat();
                     System.out.println("El Volumen es de: "+hija.volumenCubo(a));
-               break;    
+               break;  
+               
+               default:
+               System.out.println("No ingresaste una opción válida");
+               break;
+               
            }
            
         break;
@@ -128,10 +135,17 @@ public class SegundoParcial {
                 System.out.println("Tu área del la base es: "+hija.volumenHexagonal(b, h));
             break;
             
+            default:
+            System.out.println("No ingresaste una opción válida");
+            break;
+            
            }
           
         break;
-      //  
+        
+        default:
+            System.out.println("No ingresaste una opción válida");
+        break;
      }
     
     }
