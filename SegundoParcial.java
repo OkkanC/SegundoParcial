@@ -67,7 +67,6 @@ public class SegundoParcial {
                    
                 }
         break;
-
         
         case 2:
             System.out.println("\n\n");
@@ -80,14 +79,21 @@ public class SegundoParcial {
            opcion2=entrada.nextInt();
            
            switch(opcion2){
+               
                case 1:
+                   System.out.println("\n\nIngresa el valor del Lado: "); a=entrada.nextFloat();
+                   System.out.println("Tu área del Cuadrado es: "+hija.areaCuadrado(a));
+                   System.out.println("El área del Cubo es de: "+hija.areaCubo(a));
                break;   
                
                case 2:
+                    System.out.println("\n\nIngresa el valor del Lado: "); a=entrada.nextFloat();
+                     System.out.println("El perímetro es de: "+hija.perimetroCuadrado(a));
                break;   
                
                case 3:
-                   
+                    System.out.println("\n\nIngresa el valor del Lado: "); a=entrada.nextFloat();
+                    System.out.println("El Volumen es de: "+hija.volumenCubo(a));
                break;    
            }
            

@@ -30,4 +30,17 @@ public class FigurasGeometricas {
     return perimetro;
     }
     
+    public float areaCuadrado(float a){
+    float area=a*a;
+        return area;
+    }
+    
+    public float perimetroCuadrado(float a){
+    float perimetro = a+a+a+a;
+        return perimetro;
+    }
+    
+    
+    
+    
 }

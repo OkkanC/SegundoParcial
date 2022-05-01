@@ -14,4 +14,14 @@ public class FuncionesEspecificas extends FigurasGeometricas {
         return volumen;
     }
     
+    public float areaCubo(float a){
+    float area=6*(a*a);
+        return area;
+    }
+    
+    public float volumenCubo(float a){
+    float volumen=a*a*a;    
+        return volumen;
+    }
+    
 }
