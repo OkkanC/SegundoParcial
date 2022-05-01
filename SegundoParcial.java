@@ -14,8 +14,8 @@ public class SegundoParcial {
         System.out.println("----------------------------------------------------");
         System.out.println("    Bienvenido al Programa de Figuras Geométricas   ");
         System.out.println("    1. Esfera");
-        System.out.println("    2. Piramide");
-        System.out.println("    3. Cono");
+        System.out.println("    2. Cubo");
+        System.out.println("    3. ");
         System.out.println("----------------------------------------------------");
         System.out.println("Ingresa el número de la opción que quieres: "); opcion = entrada.nextInt();
         
@@ -39,34 +39,63 @@ public class SegundoParcial {
             
                 switch(opcion2){
                     
-                    case 1:
+                    case 1 -> {
                         System.out.println("\n\nIngresa el Diámetro: "); D=entrada.nextFloat();
                         System.out.println("Tu radio es de: "+hija.radio(D));
-                    break;
+                }
                     
-                    case 2:
+                    case 2 -> {
                         System.out.println("\n\nIngresa el Radio: "); r=entrada.nextFloat();
                         System.out.println("Tu área del Círculo es de: "+hija.areaCirculo(r));
                         System.out.println("Tu área de La Esfera es de: "+hija.areaEsfera(r));
-                    break;
+                }
                     
-                   case 3:
+                   case 3 -> {
                        System.out.println("\n\nIngresa el Diámetro: "); D=entrada.nextFloat();
                        System.out.println("Tu Perímetro es: "+hija.perimetroCirculo(D));
-                   break; 
+                } 
                    
-                   case 4:
+                   case 4 -> {
                        System.out.println("\n\nIngresa el Perímetro: "); P=entrada.nextFloat();
                        System.out.println("Tu Diámetro es: "+hija.diametroCirculo(P));
-                   break;
+                }
                    
-                   case 5:
+                   case 5 -> {
                        System.out.println("\n\nIngresa el Radio: "); r=entrada.nextFloat();
                        System.out.println("Tu Volumen es: "+hija.volumenEsfera(r));
-                   break;
+                }
                    
                 }
         break;
+
+        
+        case 2:
+            System.out.println("\n\n");
+           System.out.println("------Cubo/Cuadrado--------");
+           System.out.println("Funciones Disponibles para buscar:");
+           System.out.println("1. Área");
+           System.out.println("2. Perímetro");
+           System.out.println("3. Volumen");
+           System.out.println("Ingresa el número de la opción que deseas buscar:");
+           opcion2=entrada.nextInt();
+           
+           switch(opcion2){
+               case 1:
+               break;   
+               
+               case 2:
+               break;   
+               
+               case 3:
+                   
+               break;    
+           }
+           
+        break;
+        
+        case 3:
+        break;
+        
      }
     
     }
