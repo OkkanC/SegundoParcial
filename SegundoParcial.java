@@ -126,13 +126,13 @@ public class SegundoParcial {
             
             case 2:
                    System.out.println("\n\nIngresa el lado: "); b=entrada.nextFloat();
-                   System.out.println("Tu área del la base es: "+hija.perimetroHexagonal(b));
+                   System.out.println("Tu perímetro de la base es: "+hija.perimetroHexagonal(b));
             break;
             
             case 3:
                 System.out.println("\n\nIngresa el área de la base: "); b=entrada.nextFloat();
                 System.out.println("\nIngresa la altura: "); h=entrada.nextFloat();
-                System.out.println("Tu área del la base es: "+hija.volumenHexagonal(b, h));
+                System.out.println("El volumen de tu Prisma Hexagonal es: "+hija.volumenHexagonal(b, h));
             break;
             
             default:
