@@ -15,7 +15,7 @@ public class SegundoParcial {
         System.out.println("    Bienvenido al Programa de Figuras Geométricas   ");
         System.out.println("    1. Esfera");
         System.out.println("    2. Cubo");
-        System.out.println("    3. ");
+        System.out.println("    3. Prisma Hexagonal ");
         System.out.println("----------------------------------------------------");
         System.out.println("Ingresa el número de la opción que quieres: "); opcion = entrada.nextInt();
         
@@ -69,7 +69,7 @@ public class SegundoParcial {
         break;
         
         case 2:
-            System.out.println("\n\n");
+           System.out.println("\n\n");
            System.out.println("------Cubo/Cuadrado--------");
            System.out.println("Funciones Disponibles para buscar:");
            System.out.println("1. Área");
@@ -100,13 +100,39 @@ public class SegundoParcial {
         break;
         
         case 3:
+           System.out.println("\n\n");
+           System.out.println("------Prisma Hexagonal--------");
+           System.out.println("Funciones Disponibles para buscar:");
+           System.out.println("1. Área de la Base");
+           System.out.println("2. Perímetro");
+           System.out.println("3. Volumen");
+           System.out.println("Ingresa el número de la opción que deseas buscar:");
+           opcion2=entrada.nextInt();
+           
+           switch(opcion2){
+           
+           case 1:
+                   System.out.println("\n\nIngresa el Perímetro: "); P=entrada.nextFloat();
+                   System.out.println("\n\nIngresa el Apotema: "); a=entrada.nextFloat();
+                   System.out.println("Tu área del la base es: "+hija.areaDeLaBase(P, a));
+            break;   
+            
+            case 2:
+                   System.out.println("\n\nIngresa el lado: "); b=entrada.nextFloat();
+                   System.out.println("Tu área del la base es: "+hija.perimetroHexagonal(b));
+            break;
+            
+            case 3:
+                System.out.println("\n\nIngresa el área de la base: "); b=entrada.nextFloat();
+                System.out.println("\nIngresa la altura: "); h=entrada.nextFloat();
+                System.out.println("Tu área del la base es: "+hija.volumenHexagonal(b, h));
+            break;
+            
+           }
+          
         break;
         
      }
     
     }
 }
-        /*
-        case 1:
-        break;
-      */ 

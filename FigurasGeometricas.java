@@ -41,6 +41,13 @@ public class FigurasGeometricas {
     }
     
     
+    public float areaDeLaBase(float P, float a){ 
+        float aB=(P*a)/2;
+    return aB;  
+    }
     
-    
+    public float perimetroHexagonal(float b){
+    float perimetro = b*6;    
+    return perimetro;
+    }
 }

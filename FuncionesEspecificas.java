@@ -24,4 +24,9 @@ public class FuncionesEspecificas extends FigurasGeometricas {
         return volumen;
     }
     
+    
+    public float volumenHexagonal(float b, float h){
+    float volumen = b*h;
+        return volumen;
+    }
 }
